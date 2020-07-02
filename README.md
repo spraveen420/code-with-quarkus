@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # code-with-quarkus project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
@@ -20,6 +19,14 @@ Be aware that it’s not an _über-jar_ as the dependencies are copied into the 
 
 The application is now runnable using `java -jar target/code-with-quarkus-1.0.0-SNAPSHOT-runner.jar`.
 
+## To run test cases and check coverage
+
+You can run test cases using:
+```
+./mvnw clean verify
+```
+You can check coverage under code-with-quarkus/target/site/jacoco/index.html
+
 ## Creating a native executable
 
 You can create a native executable using: `./mvnw package -Pnative`.
@@ -29,7 +36,3 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
-=======
-# code-with-quarkus
-Sample CRUD quarkus project
->>>>>>> 23c898733614e45490ebcf549e610e2153c646a1
